@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="Ежедневно у нас появляются сотни Горящих предложений путевок.
+     Цены на такие предложения значительно ниже обычных. Мы поможем подобрать тур специально для Вас.">
+    <meta name="keywords"
+          content="Горящие путевки,  Огромный выбор горящих туров, Вылеты со всех городов Украины"/>
+    <link href="http://www.makintour.com/lp/best_offer/img/favicon.ico" rel="icon"/>
+    <link rel="stylesheet" type="text/css" href="http://www.makintour.com/lp/best_offer/mobile/style.css"/>
+
+
+    <title>Оставьте заявку</title>
+
+    <script>(function (w, d, u) {
+        w.readyQ = [];
+        w.bindReadyQ = [];
+        function p(x, y) {
+            if (x == "ready") {
+                w.bindReadyQ.push(y);
+            } else {
+                w.readyQ.push(x);
+            }
+        };
+        var a = {ready: p, bind: p};
+        w.$ = w.jQuery = function (f) {
+            if (f === d || f === u) {
+                return a
+            } else {
+                p(f)
+            }
+        }
+    })(window, document)</script>
+
+    <style>
+        div.logo div {
+            width: 100%;
+            margin: 4px 0 0 0;
+        }
+
+        .mobil > .header .phone-5 {
+            width: 50%;
+            text-align: center;
+            margin: 0;
+            margin-top: 19px;
+        }
+    </style>
+    <script src="../../jquery-3.1.1.min.js"></script>
+    <script src="../../mask/src/jquery.maskedinput.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+//            $.mask.definitions['~'] = '[+-]';
+
+//            $('#tel_phone').mask('+3809');
+
+            $.fn.setCursorPosition = function (pos) {
+                this.each(function (index, elem) {
+                    if (elem.setSelectionRange) {
+                        elem.setSelectionRange(pos, pos);
+                    } else if (elem.createTextRange) {
+                        var range = elem.createTextRange();
+                        range.collapse(true);
+                        range.moveEnd('character', pos);
+                        range.moveStart('character', pos);
+                        range.select();
+                    }
+                });
+                return this;
+            };
+
+            $("input[name=phone]").click(function () {
+                var input = $(this);
+                var p = input[0].selectionStart;
+
+                var str = input.val();
+                var check_last = str[str.length-1];
+
+                if (p == 13 && check_last == '_') {
+                    input.setCursorPosition(4);
+                }
+            });
+
+            $("input[name=phone]").focus(function () {
+                var input = $(this);
+                var p = input[0].selectionStart;
+
+                var str = input.val();
+                var check_last = str[str.length-1];
+
+                if (p == 13 && check_last == '_') {
+                    input.setCursorPosition(4);
+                }
+            });
+        });
+
+
+        function check(element) {
+
+//            $.mask.definitions['~'] = '[+-]';
+
+//            $("input[name=phone]").mask('+3809');
+
+
+            $.fn.setCursorPosition = function (pos) {
+                this.each(function (index, elem) {
+                    if (elem.setSelectionRange) {
+                        elem.setSelectionRange(pos, pos);
+                    } else if (elem.createTextRange) {
+                        var range = elem.createTextRange();
+                        range.collapse(true);
+                        range.moveEnd('character', pos);
+                        range.moveStart('character', pos);
+                        range.select();
+                    }
+                });
+                return this;
+            };
+
+//          Maybe not works
+            $("input[name=phone]").focus(function () {
+                var input = $("input[name=phone]");
+                input.setCursorPosition(4);
+            });
+
+            $("input[name=phone]").click(function () {
+                var input = $(this);
+                var p = input[0].selectionStart;
+
+                var str = input.val();
+                var check_last = str[str.length-1];
+
+                if (p == 13 && check_last == '_') {
+                    input.setCursorPosition(4);
+                }
+            });
+
+            $(element).removeAttr("href");
+            $(element).removeAttr("onmousedown");
+        }
+
+        function check_2(element) {
+//            $.mask.definitions['~'] = '[+-]';
+
+//            $("input[name=phone]").mask('+3809');
+
+
+            $.fn.setCursorPosition = function (pos) {
+                this.each(function (index, elem) {
+                    if (elem.setSelectionRange) {
+                        elem.setSelectionRange(pos, pos);
+                    } else if (elem.createTextRange) {
+                        var range = elem.createTextRange();
+                        range.collapse(true);
+                        range.moveEnd('character', pos);
+                        range.moveStart('character', pos);
+                        range.select();
+                    }
+                });
+                return this;
+            };
+
+            $("input[name=phone]").focus(function () {
+                var input = $("input[name=phone]");
+                input.setCursorPosition(4);
+            });
+        }
+    </script>
+
+</head>
+<body>
+<div id="page" class="mobil">
+
+    <script type="text/javascript">var GLOBAL_country_id = 12;</script>
+
+    <style>h4 {
+        font-size: 24px
+    }</style>
+
+
+    <div class="header" style="background: #dd127b;">
+        <div class="inner">
+            <!--<div class="logo-mobile">-->
+            <div style="background-image:url('http://www.makintour.com/lp/best_offer/img/cust/logo.png');
+                 background-repeat: no-repeat;
+                  background-size: 100%;
+                  background-position-y: 7px;
+                  display: inline-block;
+                  width: 50%;
+                  max-width: 190px;
+                  height: 66px;">
+                &nbsp;
+            </div>
+            <!--</div>-->
+            <div class="phone-5"><a href="tel:0 800 800 025">0 800 800 025</a></div>
+        </div>
+    </div>
+
+    <div class="top-2" style="margin-top: 20px;">
+        <div class="slider-top-2">
+            <h1>ОСТАВЬТЕ ЗАЯВКУ
+                НА ПОДБОР ТУРА </h1>
+
+            <div class="hide" id="mass" style="text-align: center;">
+                <h2>Спасибо! Ваша заявка отправлена. В ближайшее время с Вами свяжется наш менеджер.</h2>
+                <a href="javascript:;" onclick="javascript:history.back();" class="yellow-button">Назад</a>
+            </div>
+            <form class="form-horizontal"
+                  action="http://coraltravel.kiev.ua/wp-content/themes/sydney/sendmessage_for_lp_mk/sendmessage_lp_join.php"
+                  id="main-top-fast-form" style="margin: 0 0 20px;" method="post">
+
+
+                <div class="controls">
+                    <label class="control-label">Город вылета</label><br/>
+                    <select name="city">
+                        <option value="Киев">Киев</option>
+                        <option value="Днепропетровск">Днепропетровск</option>
+                        <option value="Запорожье">Запорожье</option>
+                        <option value="Львов">Львов</option>
+                        <option value="Одесса">Одесса</option>
+                        <option value="Харьков">Харьков</option>
+                    </select>
+                </div>
+                <div class="controls">
+                    <label class="control-label">Выберите страну</label><br/>
+                    <select name="departure">
+                        <option selected value="Египет">Египет</option>
+                        <option value="Австрия">Австрия</option>
+                        <option value="Беларусь">Беларусь</option>
+                        <option value="Бельгия">Бельгия</option>
+                        <option value="Болгария">Болгария</option>
+                        <option value="Венгрия">Венгрия</option>
+                        <option value="Германия">Германия</option>
+                        <option value="Голландия">Голландия</option>
+                        <option value="Греция">Греция</option>
+                        <option value="Грузия">Грузия</option>
+                        <option value="Дания">Дания</option>
+                        <option value="Испания">Испания</option>
+                        <option value="Италия">Италия</option>
+                        <option value="Кипр">Кипр</option>
+                        <option value="Латвия">Латвия</option>
+                        <option value="Литва">Литва</option>
+                        <option value="Нидерланды">Нидерланды</option>
+                        <option value="Норвегия">Норвегия</option>
+                        <option value="Польша">Польша</option>
+                        <option value="Португалия">Португалия</option>
+                        <option value="Румыния">Румыния</option>
+                        <option value="Словакия">Словакия</option>
+                        <option value="Словения">Словения</option>
+                        <option value="Украина">Украина</option>
+                        <option value="Финляндия">Финляндия</option>
+                        <option value="Франция">Франция</option>
+                        <option value="Хорватия">Хорватия</option>
+                        <option value="Черногория">Черногория</option>
+                        <option value="Чехия">Чехия</option>
+                        <option value="Швейцария">Швейцария</option>
+                        <option value="Швеция">Швеция</option>
+                        <option value="Эстония">Эстония</option>
+                        <option value="Бали">Бали</option>
+                        <option value="Вьетнам">Вьетнам</option>
+                        <option value="Израиль">Израиль</option>
+                        <option value="Индия">Индия</option>
+                        <option value="Индонезия">Индонезия</option>
+                        <option value="Иордания">Иордания</option>
+                        <option value="Китай">Китай</option>
+                        <option value="Малайзия">Малайзия</option>
+                        <option value="Мальдивы">Мальдивы</option>
+                        <option value="Сингапур">Сингапур</option>
+                        <option value="Тайланд">Тайланд</option>
+                        <option value="Турция">Турция</option>
+                        <option value="Фиджи">Фиджи</option>
+                        <option value="Филиппины">Филиппины</option>
+                        <option value="Шри-Ланка">Шри-Ланка</option>
+                        <option value="Южная Корея">Южная Корея</option>
+                        <option value="Кения">Кения</option>
+                        <option value="Маврикий">Маврикий</option>
+                        <option value="ОАЭ">ОАЭ</option>
+                        <option value="Сейшелы">Сейшелы</option>
+                        <option value="Тунис">Тунис</option>
+                        <option value="Мексика">Мексика</option>
+                        <option value="США">США</option>
+                        <option value="Аргентина">Аргентина</option>
+                        <option value="Багамы">Багамы</option>
+                        <option value="Барбадос">Барбадос</option>
+                        <option value="Бразилия">Бразилия</option>
+                        <option value="Доминикана">Доминикана</option>
+                        <option value="Куба">Куба</option>
+                        <option value="Перу">Перу</option>
+                    </select>
+                </div>
+                <div class="controls w49">
+                    <label class="control-label">Дата вылета</label><br/>
+
+
+                    <select name="date">
+                        <option id="date1" value=""></option>
+                        <option id="date2" value=""></option>
+                        <option id="date3" value=""></option>
+                        <option id="date4" value=""></option>
+                        <option id="date5" value=""></option>
+                        <option id="date6" value=""></option>
+                        <option id="date7" value=""></option>
+                        <option id="date8" value=""></option>
+                        <option id="date9" value=""></option>
+                        <option id="date10" value=""></option>
+                        <option id="date11" value=""></option>
+                        <option id="date12" value=""></option>
+                        <option id="date13" value=""></option>
+                        <option id="date14" value=""></option>
+                        <option id="date15" value=""></option>
+                        <option id="date16" value=""></option>
+                        <option id="date17" value=""></option>
+                        <option id="date18" value=""></option>
+                        <option id="date19" value=""></option>
+                        <option id="date20" value=""></option>
+                        <option id="date21" value=""></option>
+                        <option id="date22" value=""></option>
+                        <option id="date23" value=""></option>
+                        <option value="Другая дата">Другая дата</option>
+                        <!--<option id="date21" value=""></option>
+                        <option id="date22" value=""></option>
+                        <option id="date23" value=""></option>
+                        <option id="date24" value=""></option>
+                        <option id="date25" value=""></option>
+                        <option id="date26" value=""></option>
+                        <option id="date27" value=""></option>
+                        <option id="date28" value=""></option>
+                        <option id="date29" value=""></option>
+                        <option id="date30" value=""></option>
+                        <option id="date31" value=""></option>
+                        <option id="date32" value=""></option>
+                        <option id="date33" value=""></option>
+                        <option id="date34" value=""></option>
+                        <option id="date35" value=""></option>
+                        <option id="date36" value=""></option>
+                        <option id="date37" value=""></option>
+                        <option id="date38" value=""></option>
+                        <option id="date39" value=""></option>
+                        <option id="date40" value=""></option>
+                        <option id="date41" value=""></option>
+                        <option id="date42" value=""></option>
+                        <option id="date43" value=""></option>
+                        <option id="date44" value=""></option>
+                        <option id="date45" value=""></option>
+                        <option id="date46" value=""></option>
+                        <option id="date47" value=""></option>
+                        <option id="date48" value=""></option>
+                        <option id="date49" value=""></option>
+                        <option id="date50" value=""></option>-->
+                    </select>
+
+
+                </div>
+                <div class="controls w49" style="float: right;">
+                    <label class="control-label">Ночей</label>
+
+                    <select name="nights">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7" selected>7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </div>
+                <div class="clear"></div>
+                <div class="controls w49">
+                    <label class="control-label">Взрослых</label>
+                    <select name="adt">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="controls w49" style="float: right;">
+                    <label class="control-label" for="input-number-mod">Детей</label>
+                    <select name="cnn">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="clear"></div>
+
+                <div class="controls">
+                    <!--<label class="control-label">Введите ваш номер телефона</label><br/>-->
+                    <h4 class="shipping-address">Введите ваш номер телефона</h4>
+                    <a onmousedown="check(this)" href="javascript:void(0)">
+                        <input onfocus="check_2(this)" id="tel_phone" name="phone" type="tel" class="input" pattern="[+]{1}[0-9]{12}"
+                               placeholder="+380991234567" required="required" value="+380"  maxlength="13">
+                    </a>
+                </div>
+                <input type="hidden" name="show" value="mobil">
+                <input type="hidden" name="name" value="">
+                <input type="hidden" name="email" value="">
+                <input type="hidden" name="budget"/>
+                <input name="id_company" id="id_company" type="hidden" value="2"/>
+                <input name="id_pages" id="id_pages" type="hidden" value="97"/>
+                <!--<input name="city" id="city" type="hidden" value="0"/>-->
+                <input name="city_yandex" id="city_yandex" type="hidden" value="0"/>
+                <!--<input type="hidden" name="country" value="12"/>-->
+                <button type="submit" class="yellow-button" style="background: #00a3d3; color: #fff;">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+<script>function pageviewSend(url) {
+    var loc = window.location.pathname;
+    var send = loc + ' - ' + url;
+    console.log(send);
+    dataLayer.push({'event': url});
+}</script>
+
+<script type="text/javascript">var nowDate = new Date(), isIphone = false; nowDate.setDate(nowDate.getDate()+1);
+/*2017, 0, 18*/
+
+var d = new Date();
+var ix= 1;
+
+Date.prototype.getDaysInMonth = function ()
+{
+    var here = new Date(this.getTime());
+    here.setDate(32);
+    return 32 - here.getDate();
+};
+
+for(var i = 1; i < 24; i++) {
+    if(d.getDate()+i > new Date().getDaysInMonth()) {
+        if(ix < 10) {
+            document.getElementById('date'+i).value = '0'+ix + '.' + d.getMonth()+2 + '.' + d.getFullYear();
+            document.getElementById('date'+i).innerHTML = '0'+ix + '.' + d.getMonth()+2 + '.' + d.getFullYear();
+        }
+        else {
+            document.getElementById('date'+i).value = ix + '.' + d.getMonth()+2 + '.' + d.getFullYear();
+            document.getElementById('date'+i).innerHTML = ix + '.' + d.getMonth()+2 + '.' + d.getFullYear();
+        }
+
+        ix++;
+    }
+    else {
+        document.getElementById('date'+i).value = d.getDate()+i + '.' + d.getMonth()+1 + '.' + d.getFullYear();
+        document.getElementById('date'+i).innerHTML = d.getDate()+i + '.' + d.getMonth()+1 + '.' + d.getFullYear();
+    }
+}
+</script>
+
+<!-- <script type="text/javascript" src="/js/jquery-1.11.0.min.js.pagespeed.jm.VDIv7VBTRR.js"></script> -->
+<!-- <script src="/js/jquery-migrate-1.2.1.min.js+jquery.ba-outside-events.min.js+jquery.maskedinput-1.3.min.js+jquery.mousewheel.js+poshytip,_jquery.poshytip.js.pagespeed.jc.aVspYko1lr.js"></script><script>eval(mod_pagespeed_4$$XMk1HGy);</script> -->
+<!-- <script>eval(mod_pagespeed_XbI1wWBy$7);</script>
+<script>eval(mod_pagespeed_U27_rqLerW);</script>
+<script>eval(mod_pagespeed_WNk$rTJS41);</script>
+<script>eval(mod_pagespeed_1tjkYP37aE);</script> -->
+<!-- <script type="text/javascript" src="/mobile/js/mCustomScrollbar/jquery.mCustomScrollbar.js.pagespeed.jm.8Bx_QH2JL2.js"></script> -->
+<!-- <script type="text/javascript" src="/mobile/js/jquery.carouFredSel-6.2.1.js.pagespeed.jm.8QnCotQ9Rz.js"></script> -->
+<!-- <script src="/mobile/js/bootstrap,_bootstrap.min.js+global.js,qv==1.1.8.pagespeed.jc.vpeb-8mZry.js"></script> -->
+<!-- <script>eval(mod_pagespeed_rC2lhyWvpI);</script> -->
+
+<!-- <script>eval(mod_pagespeed_YFa4TXHpNX);</script>  -->
+
+
+<!-- <script type="text/javascript">//<![CDATA[
+jQuery(window).on('load',function(){var f=$('#main-top-fast-form');$('*[required]',f).removeAttr('required').attr('data-required','required').on('focus change',function(){$(this).removeClass('error');});f.submit(function(){var error=false;$('*[data-required]',this).each(function(){if($.trim($(this).val())==''){$(this).addClass('error');error=true;if(!$(this).data('isClickReady')){$(this).focus(function(){$(this).removeClass('error');});}}});if(error)return false;var buttons=$('*[type="submit"]',f);buttons.attr('disabled','disabled');var target=f.data('target');if(!target)target='/ajax/form/';$.post(target,f.serialize(),function(){buttons.removeAttr('disabled');},'script');return false;});});
+//]]></script> -->
+</body>
+</html>
+
+
